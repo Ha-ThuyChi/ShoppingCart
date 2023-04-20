@@ -2,7 +2,7 @@
  * @author Ha Thuy Chi - s3930417
  */
 
-package assignment1;
+package ShoppingCart;
 
 public class DigitalProduct extends Product {
     private String name;

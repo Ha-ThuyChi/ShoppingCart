@@ -2,7 +2,7 @@
  * @author Ha Thuy Chi - s3930417
  */
 
-package assignment1;
+package ShoppingCart;
 
 import java.util.Comparator;
 
