@@ -2,7 +2,7 @@
  * @author Ha Thuy Chi - s3930417
  */
 
-package assignment1;
+package ShoppingCart;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -14,14 +14,14 @@ public class Main {
     public static void main(String[] args) {
         List<ShoppingCart> lst = new ArrayList<>();
         Map<String, String> items = new HashMap<>();
-        System.out.println("COSC2440 Further Programming - Assignment 1\nInstructors: Dr. Tri Dang Tran & Dr. Phong Ngo Tuan\nHa Thuy Chi - s3930417\nApril 02, 2023");
         boolean start = false;
         while (!start) {
             Scanner sc1 = new Scanner(System.in);
             System.out.println("\n\nPlease choose options by entering the number!\n" + 
             "1 Create shopping cart\n"+
             "2 Display all shopping carts base on their total weight\n"+
-            "3 Exit\n");
+            "3 Exit");
+            System.out.println("-------------------------------------------------");
             int ans1 = sc1.nextInt();
             switch (ans1) {
                 case 1 : {
@@ -35,6 +35,7 @@ public class Main {
                         "1 Create new products\n"+
                         "2 Display the cart amount\n"+
                         "3 Exit");
+                        System.out.println("-------------------------------------------------");
                         int ans2 = sc2.nextInt();
                         switch (ans2) {
                             case 1 : { //Create and Add products to cart
@@ -59,7 +60,7 @@ public class Main {
                                     
                                     boolean editItem = false;
                                     while (!editItem) {
-                                        System.out.println("Do you want to edit item? (Y/N)");
+                                        System.out.println("Do you want to edit item? (Y/N)\n");
                                         String ans3 = sc3.next();
                                         if (ans3.equals("Y")) {
                                             Scanner sc4 = new Scanner(System.in);
@@ -71,35 +72,35 @@ public class Main {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     String newValue = sc5.nextLine();
                                                     product.setName(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 } 
                                                 case 2: {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     String newValue = sc5.nextLine();
                                                     product.setDescription(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                                 case 3: {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     int newValue = sc5.nextInt();
                                                     product.setQuantity(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                                 case 4 : {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     double newValue = sc5.nextDouble();
                                                     product.setPrice(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                                 case 5 : {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     double newValue = sc5.nextDouble();
                                                     product.setWeight(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                             }
@@ -152,28 +153,28 @@ public class Main {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     String newValue = sc5.nextLine();
                                                     product.setName(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 } 
                                                 case 2: {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     String newValue = sc5.nextLine();
                                                     product.setDescription(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                                 case 3: {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     int newValue = sc5.nextInt();
                                                     product.setQuantity(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                                 case 4 : {
                                                     System.out.println("Please enter the value you want to edit!");
                                                     double newValue = sc5.nextDouble();
                                                     product.setPrice(newValue);
-                                                    System.out.printf("Your new products: %s", product.toString());
+                                                    System.out.printf("Your new products: %s\n", product.toString());
                                                     break;
                                                 }
                                             }

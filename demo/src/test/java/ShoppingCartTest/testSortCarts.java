@@ -2,7 +2,7 @@
  * @author Ha Thuy Chi - s3930417
  */
 
- package assignment1;
+ package ShoppingCartTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,6 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.*;
+
+import ShoppingCart.DigitalProduct;
+import ShoppingCart.PhysicalProduct;
+import ShoppingCart.ShoppingCart;
+import ShoppingCart.ShoppingCartComparator;
 
 public class testSortCarts {
     @Test

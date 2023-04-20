@@ -2,10 +2,12 @@
  * @author Ha Thuy Chi - s3930417
  */
 
- package assignment1;
+ package ShoppingCartTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+
+import ShoppingCart.PhysicalProduct;
 
 public class testSetGetMsg {
     @Test

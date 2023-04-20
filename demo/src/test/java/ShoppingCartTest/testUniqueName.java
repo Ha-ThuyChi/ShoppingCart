@@ -2,10 +2,13 @@
  * @author Ha Thuy Chi - s3930417
  */
 
-package assignment1;
+package ShoppingCartTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+
+import ShoppingCart.DigitalProduct;
+import ShoppingCart.PhysicalProduct;
 
 public class testUniqueName {
     @Test
